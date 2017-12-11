@@ -43,6 +43,7 @@ RUN set -eux; \
 	export PATH="/usr/local/go/bin:$PATH"; \
 	go version
 
+# this part above is from => https://github.com/docker-library/golang/blob/01662edd98bfea507162776c08fbfb51aa8f1e3d/1.10-rc/stretch/Dockerfile
 
 ENV GOPATH /go
 ENV PATH $GOPATH/bin:/usr/local/go/bin:$PATH
